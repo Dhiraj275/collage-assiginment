@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+</head>
+<body>
+    <h1>Print Multiplication Table</h1>
+    <br>
+    <input type="number" id="input" placeholder="Enter Number"> <button onclick="fire()">Click here</button>
+    <div id="root"></div>
+</body>
+<script>
+    var button = document.getElementById("button")
+    var root = document.getElementById("root")
+    function fire(){
+        var input = document.getElementById("input")
+        input = parseInt(input.value)
+        var str = ''
+        for(i=1; i<11; i++){
+            temstr = `${input}x${i}=${i*input}`
+            str  = str+temstr+"<br>"
+        }
+        root.innerHTML= str
+    }
+</script>
+</html>
