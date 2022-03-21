@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="maths" placeholder="Maths">
+    <input type="text" id="it" placeholder="It system">
+    <input type="text" id="python" placeholder="python">
+    <input type="text" id="swp" placeholder="Static Web Page">
+
+    <button onclick="fuck()">Click Me!!</button>
+    <p id="display"></p>
+    <script>
+        function fuck() {
+            var maths = parseFloat(document.getElementById('maths').value)
+            var it = parseFloat(document.getElementById('it').value)
+            var python = parseFloat(document.getElementById('python').value)
+            var swp = parseFloat(document.getElementById('swp').value)
+            document.getElementById('display').innerHTML = maths + it + python + swp
+        }
+    </script>
+</body>
+
+</html>
